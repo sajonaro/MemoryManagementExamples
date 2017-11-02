@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Solution
+﻿namespace Solution.EventListeners
 {
+    using System;
     using System.Diagnostics;
+    using Solution.EventSources;
+    using Solution.Tools;
 
     /// <summary>
     /// Event listener using WeakEventManager implementation

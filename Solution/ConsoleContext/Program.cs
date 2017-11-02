@@ -10,13 +10,13 @@ namespace ConsoleContext
         {
            var scenarios = new Scenarios();
 
-            scenarios.ScenarioOne();
+            scenarios.AllConventionalAndFails();
             Console.WriteLine("_______________________________________");
             Console.WriteLine("_______________________________________");
             try
             {
                 //expected exception here
-                scenarios.ScenarioTwo();
+                scenarios.ModifiedSmartSourceWithClosure();
             }
             catch (Exception e)
             {
@@ -25,11 +25,11 @@ namespace ConsoleContext
             Console.WriteLine("_______________________________________");
             Console.WriteLine("_______________________________________");
 
-            scenarios.ScenarioTwoModified();
+            scenarios.SmartEventSourceMethodGroup();
             Console.WriteLine("_______________________________________");
             Console.WriteLine("_______________________________________");
 
-            scenarios.ScenarioTwoModifiedEvenMore();
+            scenarios.ScenarioWithSmartEventSourceNoRoot();
             Console.WriteLine("_______________________________________");
             Console.WriteLine("_______________________________________");
 

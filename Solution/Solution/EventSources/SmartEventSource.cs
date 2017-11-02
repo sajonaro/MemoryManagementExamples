@@ -1,7 +1,9 @@
-﻿using System;
-
-namespace Solution
+﻿namespace Solution.EventSources
 {
+    using System;
+
+    using Solution.Tools;
+
     public class SmartEventSource
     {
         private readonly WeakCollection<EventHandler<EventArgs>> eventHandlers = new WeakCollection<EventHandler<EventArgs>>();

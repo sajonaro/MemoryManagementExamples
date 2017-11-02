@@ -4,8 +4,8 @@ namespace Tests
 {
     using System;
     using System.Diagnostics;
-
-    using Solution;
+    using Solution.EventListeners;
+    using Solution.EventSources;
 
     [TestClass]
     public class Scenarios
@@ -16,7 +16,7 @@ namespace Tests
         /// reclaim event listener  
         /// </summary>
         [TestMethod]
-        public void ScenarioOne()
+        public void AllConventionalAndFails()
         {
             Debug.WriteLine("!!! Start diagnostics !!! ");
 
@@ -45,7 +45,7 @@ namespace Tests
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
-        public void ScenarioTwo()
+        public void ModifiedSmartSourceWithClosure()
         {
             Debug.WriteLine("!!! Start diagnostics !!! ");
 
@@ -74,7 +74,7 @@ namespace Tests
         /// scenario with smart event source
         /// </summary>
         [TestMethod]
-        public void ScenarioTwoModified()
+        public void SmartEventSourceMethodGroup()
         {
             Debug.WriteLine("!!! Start diagnostics !!! ");
 
@@ -102,7 +102,7 @@ namespace Tests
         /// scenario with smart event source
         /// </summary>
         [TestMethod]
-        public void ScenarioTwoModifiedEvenMore()
+        public void ScenarioWithSmartEventSourceNoRoot()
         {
             Debug.WriteLine("!!! Start diagnostics !!! ");
 

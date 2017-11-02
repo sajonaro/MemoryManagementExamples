@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Solution
+﻿namespace Solution.Tools
 {
+    using System;
+    using System.Collections.Generic;
+
     /// <summary>
     /// A collection of weak references to objects.
     /// </summary>

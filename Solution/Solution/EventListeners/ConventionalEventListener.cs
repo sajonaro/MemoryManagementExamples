@@ -1,8 +1,8 @@
-﻿using System;
-
-namespace Solution
+﻿namespace Solution.EventListeners
 {
+    using System;
     using System.Diagnostics;
+    using Solution.EventSources;
 
     /// <summary>
     /// will work incorrectly in GC scenario

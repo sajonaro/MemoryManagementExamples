@@ -1,7 +1,6 @@
-﻿using System;
-
-namespace Solution
+﻿namespace Solution.Tools
 {
+    using System;
     using System.Collections.Generic;
     using System.Reflection;
 

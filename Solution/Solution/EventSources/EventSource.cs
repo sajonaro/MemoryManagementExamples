@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Solution
+﻿namespace Solution.EventSources
 {
+    using System;
+
     /// <summary>
     /// Conventional event source
     /// </summary>
