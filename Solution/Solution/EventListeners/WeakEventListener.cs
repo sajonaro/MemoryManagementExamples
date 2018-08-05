@@ -18,8 +18,8 @@
 
         public WeakEventListener(EventSource source)
         {
-            WeakEventManager<EventSource, EventArgs>.Current.AddHandler(source, "Event", this.OnEvent);
-            //WeakEventManager<EventSource, EventArgs>.Current.AddHandler(source, s => nameof(s.Event), this.OnEvent);
+            //WeakEventManager<EventSource, EventArgs>.Current.AddHandler(source, "Event", this.OnEvent);
+            WeakEventManager<EventSource, EventArgs>.Current.AddHandler(source, s => nameof(s.Event), this.OnEvent);
         }
 
         ~WeakEventListener()

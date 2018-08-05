@@ -37,8 +37,8 @@
 
         ~ConventionalEventListener()
         {
-            Debug.WriteLine("ConventionalEventListener finalized.");
-            Console.WriteLine("ConventionalEventListener finalized.");
+            Debug.WriteLine("ConventionalEventListener finalized. " + this.Id);
+            Console.WriteLine("ConventionalEventListener finalized."+ this.Id);
         }
     }
 }
